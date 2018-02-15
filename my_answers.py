@@ -39,7 +39,7 @@ def cleaned_text(text):
     punctuation = ['!', ',', '.', ':', ';', '?']
     replaced = set()
     for t in text:
-        if not( t.isalnum()) and t != ' ' and t not in punctuation:
+        if not( t.isalpha()) and t != ' ' and t not in punctuation:
             replaced.add(t)
 
     replaced = list(replaced)
